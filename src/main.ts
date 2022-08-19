@@ -1,8 +1,26 @@
+// main.js
 import Vue from "vue";
+import VueI18n from "vue-i18n";
+import { createI18n } from "vue-i18n-composable";
 import App from "./App.vue";
 
-Vue.config.productionTip = false;
+Vue.use(VueI18n);
 
-new Vue({
+const i18n = createI18n({
+  locale: "ja",
+  messages: {
+    en: {
+      language: "English",
+    },
+    ja: {
+      language: "日本語",
+    },
+  },
+});
+
+const app = new Vue({
   render: (h) => h(App),
-}).$mount("#app");
+  i18n,
+});
+
+app.$mount("#app");
