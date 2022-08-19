@@ -1,6 +1,6 @@
 # Error when using vue-i18n-composable
 
-Minimal vue project to reproduce GitHub issue
+Minimal vue project to reproduce GitHub issue https://github.com/intlify/vue-i18n-composable/issues/21
 
 ## Steps to reproduce
 1. Install dependencies: `npm ci`
